@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg py-3 fixed-top affix">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+
+            <!-- Add Logo Image -->
+            <p>logo image</p>
+        </a>
+
+        <!-- Nav Items -->
+        <div class="mr-auto">
+            <p>app content</p>
+            <!-- Add app-categories-menu component -->
+        </div>
+
+        <!-- Right Corner -->
+        <div class="float-right">
+            <!-- Settings -->
+            <!-- Add app-search-input component -->
+
+            <!-- Settings -->
+            <a href="#" class="d-inline-block px-4 cursor-po-c">
+                <p>settings</p>
+            </a>
+
+            <!-- User Profile -->
+            <div class="d-inline-block pl-3">
+                <button mat-button [matMenuTriggerFor]="userMenu">
+                    <!-- add user avatar -->
+                    <!-- Avatar -->
+                    <p>Anestis</p>
+                </button>
+                <mat-menu #userMenu="matMenu">
+                    <a href="#">
+                        <p>Account</p>
+                    </a>
+
+                    <a href="#"><p>Logout</p></a>
+                </mat-menu>
+            </div>
+
+        </div>
+    </div>
+</nav>
