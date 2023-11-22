@@ -10,9 +10,9 @@ export class LoginComponent implements OnInit{
   // loginGroup: FormGroup;
   // forgotGroup: FormGroup;
 
-  // constructor(private formBuilder: FormBuilder, private ) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-      
+      console.log("hhhh");
   }
 }

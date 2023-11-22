@@ -12,11 +12,15 @@ import { MatMenuModule } from '@angular/material/menu';
 
 /** Modules  */
 import { AppRoutingModule } from './app-routing.module';
+import { provideRouter } from '@angular/router';
+import { routes } from './app-routing.module';
 import { UserModule } from './routes/user/user.module';
 import { ComponentsModule } from './components/components.module';
+import { LoginComponent } from './routes/user/login/login.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     HttpClientModule,
@@ -26,9 +30,11 @@ import { ComponentsModule } from './components/components.module';
     AngularMaterialModule,
     UserModule,
     ComponentsModule,
-    MatMenuModule
+    MatMenuModule,
+    AppRoutingModule
   ],
   providers: [
+    provideRouter(routes)
   ],
   bootstrap: [AppComponent]
 })
